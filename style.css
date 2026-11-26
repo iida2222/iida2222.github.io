@@ -1,0 +1,222 @@
+
+/* ページ全体 */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #101426;
+  color: #eeeeff;
+  font-family: sans-serif;
+  line-height: 1.8;
+}
+
+/* ヘッダー */
+header {
+  text-align: center;
+  padding: 35px 20px;
+  background-color: #171d35;
+  border-bottom: 1px solid #343b60;
+}
+
+header h1 {
+  color: #b69cff;
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+header p {
+  color: #999abb;
+  letter-spacing: 5px;
+  font-size: 12px;
+  margin-top: 0;
+}
+
+/* メニュー */
+nav {
+  margin-top: 25px;
+}
+
+nav a {
+  display: inline-block;
+  color: #eeeeff;
+  text-decoration: none;
+  margin: 8px 12px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #b69cff;
+}
+
+/* メインビジュアル */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #171d35, #30234e);
+}
+
+.hero-label {
+  color: #b69cff;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+.hero h2 {
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 3px;
+  color: white;
+  border: none;
+}
+
+.hero p {
+  color: #c5c4dc;
+}
+
+.main-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background-color: #9270d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: 0.3s;
+}
+
+.main-button:hover {
+  background-color: #b69cff;
+  transform: translateY(-3px);
+}
+
+/* 各セクション */
+section:not(.hero) {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 65px 25px;
+}
+
+.section-number {
+  color: #a98be8;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+section h2 {
+  font-size: 30px;
+  color: #c5adff;
+  border-bottom: 2px solid #514374;
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+}
+
+/* プロフィール */
+.info-card {
+  background-color: #1a2039;
+  border: 1px solid #343b60;
+  border-radius: 12px;
+  padding: 20px 25px;
+}
+
+.info-card strong {
+  color: #b69cff;
+}
+
+/* スキル */
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.skill-card {
+  flex: 1 1 180px;
+  background-color: #1a2039;
+  border: 1px solid #514374;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  background-color: #292448;
+}
+
+.skill-card h3 {
+  color: #b69cff;
+}
+
+/* 作品 */
+.work-card {
+  background-color: #1a2039;
+  border: 1px solid #514374;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  border-color: #b69cff;
+}
+
+.work-card h3 {
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.work-category {
+  color: #b69cff;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.coming-soon {
+  color: #999abb;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 30px 15px;
+  background-color: #171d35;
+  color: #999abb;
+  font-size: 12px;
+  border-top: 1px solid #343b60;
+}
+
+/* スマートフォン対応 */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 25px;
+  }
+
+  nav a {
+    margin: 5px 7px;
+  }
+
+  .hero {
+    padding: 75px 15px;
+  }
+
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  section:not(.hero) {
+    padding: 45px 20px;
+  }
+
+  section h2 {
+    font-size: 25px;
+  }
+}
