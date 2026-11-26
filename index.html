@@ -1,37 +1,155 @@
 
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>iida2222 | My Portfolio</title>
-  </head>
-  <body>
-    <h1>MY PORTFOLIO</h1>
-    <p>ゲーム・音楽・プログラミングを楽しむ大学生の作品集</p>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iida2222 | My Portfolio</title>
+  <link href="style.css" rel="stylesheet">
+</head>
 
-    <h2>About</h2>
-    <p>
-      はじめまして。ゲームやカラオケが好きな大学生です。
-      授業で学んだプログラミングを活用して、
-      自分のアイデアを形にすることに挑戦しています。
-    </p>
+<body>
 
-    <h2>Profile</h2>
-    <p>ハンドルネーム：iida2222</p>
-    <p>趣味：ゲーム、カラオケ</p>
+  <!-- ヘッダー -->
+  <header>
+    <h1>iida2222</h1>
+    <p>MY PORTFOLIO</p>
 
-    <h2>Skills</h2>
-    <p>HTML / CSS / JavaScript / p5.js</p>
-    <p>現在、プログラミングの基礎を学習中です。</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#profile">Profile</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="#history">History</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <h2>Works</h2>
-    <p>これから制作した作品を紹介していきます。</p>
+  <!-- メイン -->
+  <main>
 
-    <h2>History</h2>
-    <p>大学でプログラミングやデジタルコンテンツについて学習中。</p>
+    <section class="hero">
+      <p class="hero-label">WELCOME TO MY PORTFOLIO</p>
+      <h2>CREATE<br>MY OWN WORLD.</h2>
+      <p>
+        ゲーム・音楽・プログラミング。<br>
+        好きなことから、新しい作品を生み出す。
+      </p>
+      <a class="main-button" href="#works">作品を見る</a>
+    </section>
 
-    <h2>Contact</h2>
-    <p>ご覧いただきありがとうございます。</p>
-  </body>
+    <!-- 自己紹介 -->
+    <section id="about">
+      <p class="section-number">01 / ABOUT</p>
+      <h2>About Me</h2>
+      <p>
+        はじめまして。iida2222です。<br>
+        ゲームやカラオケが好きな大学生です。
+        大学ではプログラミングやデジタルコンテンツについて学んでいます。
+        授業で学んだ知識を活かして、自分のアイデアを形にすることに挑戦しています。
+      </p>
+    </section>
+
+    <!-- プロフィール -->
+    <section id="profile">
+      <p class="section-number">02 / PROFILE</p>
+      <h2>Profile</h2>
+
+      <div class="info-card">
+        <p><strong>HANDLE NAME</strong>　iida2222</p>
+        <p><strong>OCCUPATION</strong>　大学生</p>
+        <p><strong>HOBBY</strong>　ゲーム・カラオケ</p>
+        <p><strong>INTEREST</strong>　ゲーム制作・デザイン・プログラミング</p>
+      </div>
+    </section>
+
+    <!-- スキル -->
+    <section id="skills">
+      <p class="section-number">03 / SKILLS</p>
+      <h2>Skills</h2>
+      <p>
+        授業や自主学習を通して、少しずつ技術を身につけています。
+      </p>
+
+      <div class="skill-list">
+        <div class="skill-card">
+          <h3>HTML</h3>
+          <p>Webページの構造を作る</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>CSS</h3>
+          <p>Webページのデザインを整える</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Webページに動きをつける</p>
+        </div>
+
+        <div class="skill-card">
+          <h3>p5.js</h3>
+          <p>プログラムで作品を作る</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 作品 -->
+    <section id="works">
+      <p class="section-number">04 / WORKS</p>
+      <h2>My Works</h2>
+      <p>
+        これまでに制作した作品や、これから挑戦する作品を紹介します。
+      </p>
+
+      <div class="work-card">
+        <p class="work-category">CREATIVE CODING</p>
+        <h3>Interactive Art</h3>
+        <p>
+          プログラミングを使って、色や形の変化を楽しめる作品を制作予定です。
+        </p>
+        <p class="coming-soon">COMING SOON...</p>
+      </div>
+
+      <div class="work-card">
+        <p class="work-category">WEB DESIGN</p>
+        <h3>My Portfolio</h3>
+        <p>
+          HTMLとCSSを使って制作した、自分のポートフォリオサイトです。
+        </p>
+        <p class="work-category">THIS WEBSITE</p>
+      </div>
+    </section>
+
+    <!-- 学習履歴 -->
+    <section id="history">
+      <p class="section-number">05 / HISTORY</p>
+      <h2>History</h2>
+
+      <div class="info-card">
+        <p><strong>2026</strong>　HTML・CSSの学習</p>
+        <p><strong>2026</strong>　JavaScriptの基礎学習</p>
+        <p><strong>2026</strong>　GitHub Pagesでサイトを公開</p>
+        <p><strong>2026</strong>　プログラミング作品の制作に挑戦</p>
+      </div>
+    </section>
+
+    <!-- お問い合わせ -->
+    <section id="contact">
+      <p class="section-number">06 / CONTACT</p>
+      <h2>Contact</h2>
+      <p>
+        最後までご覧いただきありがとうございます。<br>
+        これからも学んだことを活かして、さまざまな作品を制作していきます。
+      </p>
+    </section>
+
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>© 2026 iida2222 MY PORTFOLIO</p>
+  </footer>
+
+</body>
 </html>
